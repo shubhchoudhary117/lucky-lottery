@@ -1,0 +1,399 @@
+.regular-bz {
+    width: 100%;
+
+    &__container {
+        width: 100%;
+    }
+
+    &__bazars-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+}
+
+.regular-bazar-card {
+    width: 100%;
+    min-width: 0;
+    min-height: 320px;
+    max-height: 320px;
+    padding: 24px 22px 20px;
+    position: relative;
+    border-radius: 22px;
+
+    background:
+        linear-gradient(135deg,
+            #171204 0%,
+            #090909 100%);
+
+    border: 1px solid rgba(255, 196, 0, 0.25);
+
+    position: relative;
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.45),
+        0 0 18px rgba(255, 183, 0, 0.08);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -40px;
+        right: -40px;
+        width: 120px;
+        height: 120px;
+
+        background: radial-gradient(circle,
+                rgba(255, 191, 0, 0.18) 0%,
+                transparent 70%);
+    }
+
+    &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            width: 100%;
+            height: 3px;
+
+            background:
+                linear-gradient(90deg,
+                    transparent,
+                    #ffcc00,
+                    transparent);
+
+            opacity: 0.8;
+    }
+}
+
+
+.regular-bazar-card__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.regular-bazar-card__left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.regular-bazar-card__logo {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        radial-gradient(circle at top,
+            #ffe27a 0%,
+            #ffb700 45%,
+            #3b2600 100%);
+
+    border: 2px solid rgba(255, 205, 90, 0.8);
+    color: #1d1200;
+    font-size: 42px;
+    box-shadow:
+        0 0 18px rgba(255, 183, 0, 0.28);
+}
+
+.regular-bazar-card__info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.regular-bazar-card__title {
+    margin: 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-wrap: nowrap;
+}
+
+.regular-bazar-card__result {
+    color: #f1e03f;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.regular-bazar-card__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.regular-bazar-card__live-tv {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+
+.regular-bazar-card__meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 183, 0, 0.16);
+    border-bottom: 1px solid rgba(255, 183, 0, 0.16);
+    margin-top: 10px;
+}
+
+.regular-bazar-card__meta-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.regular-bazar-card__divider {
+    width: 1px;
+    height: 54px;
+    background: #594105;
+    margin: 0px 20px;
+}
+
+.regular-bazar-card__meta-label {
+    color: #d8c17d;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.regular-bazar-card__meta-value {
+    color: #e4e5cf;
+    font-size: 14px;
+    font-weight: 500;
+    text-wrap: nowrap;
+}
+
+.regular-bazar-card__timings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 0;
+}
+
+.regular-bazar-card__time-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.regular-bazar-card__time-divider {
+    width: 1px;
+    height: 54px;
+    background: #594105;
+    margin-right: 10px;
+}
+
+.regular-bazar-card__time-label {
+    color: #d8c17d;
+    font-size: 13px;
+    font-weight: 600;
+    text-wrap: nowrap;
+}
+
+.regular-bazar-card__time-value {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.regular-bazar-card__countdown {
+    color: #f7d800;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.regular-bazar-card__play-btn {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    cursor: pointer;
+    background:
+        radial-gradient(circle at top,
+            #ffe27a 0%,
+            #ffb700 45%,
+            #3b2600 100%);
+
+    border: 2px solid rgba(255, 205, 90, 0.8);
+    color: #1c1400;
+    font-size: 19px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.35),
+        0 10px 24px rgba(255, 183, 0, 0.25);
+    transition: 0.25s ease;
+
+    &:hover {
+        transform: translateY(-2px);
+
+        box-shadow:
+            inset 0 1px 0 rgba(255, 255, 255, 0.35),
+            0 14px 30px rgba(255, 183, 0, 0.34);
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+    .regular-bz {
+        width: 100%;
+
+        &__container {
+            width: 100%;
+        }
+
+        &__bazars-grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+        }
+    }
+
+    .regular-bazar-card {
+        width: 100%;
+        min-width: 0;
+        padding: 24px 22px 20px;
+    }
+
+
+    .regular-bazar-card__header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    .regular-bazar-card__left {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .regular-bazar-card__logo {
+        width: 38px;
+        height: 38px;
+        min-width: 38px;
+        font-size: 30px;
+    }
+
+    .regular-bazar-card__info {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .regular-bazar-card__title {
+        font-size: 14px;
+    }
+
+    .regular-bazar-card__result {
+        font-size: 13px;
+    }
+
+    .regular-bazar-card__right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+    }
+
+    .regular-bazar-card__live-tv {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+
+
+    .regular-bazar-card__meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        margin-top: 10px;
+    }
+
+    .regular-bazar-card__meta-item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .regular-bazar-card__divider {
+        width: 1px;
+        height: 54px;
+        margin: 0px 20px;
+    }
+
+    .regular-bazar-card__meta-label {
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .regular-bazar-card__meta-value {
+        font-size: 14px;
+        font-weight: 500;
+        text-wrap: nowrap;
+    }
+
+    .regular-bazar-card__timings {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 17px 0;
+    }
+
+    .regular-bazar-card__time-item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .regular-bazar-card__time-divider {
+        width: 1px;
+        height: 54px;
+        background: #594105;
+        margin-right: 10px;
+    }
+
+    .regular-bazar-card__time-label {
+        font-size: 13px;
+        text-wrap: nowrap;
+    }
+
+    .regular-bazar-card__time-value {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .regular-bazar-card__countdown {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .regular-bazar-card__play-btn {
+        width: 100%;
+        height: 50px;
+        border: none;
+        outline: none;
+        border-radius: 16px;
+       font-size: 17px;
+    }
+}
