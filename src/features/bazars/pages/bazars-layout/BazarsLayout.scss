@@ -37,7 +37,7 @@
         border: none;
         outline: none;
         position: relative;
-        border-radius: 6px;
+        border-radius: 22px;
         background: linear-gradient(135deg, #181400, #120f00);
         border: 1px solid #604401;
         cursor: pointer;
@@ -113,7 +113,7 @@
 
         &__tab-title {
             font-size: 13px;
-           
+
         }
 
         &__dynamic-outlet {
