@@ -36,29 +36,21 @@ const RegularBazars = () => {
                     {bazarsData.map((bazar) => (
                         <div
                             className="regular-bazar-card"
-                            key={bazar.id}
-                        >
+                            key={bazar.id}>
 
                             <div className="regular-bazar-card__header">
-
                                 <div className="regular-bazar-card__left">
-
                                     <div className="regular-bazar-card__logo">
                                         ♠
                                     </div>
-
                                     <div className="regular-bazar-card__info">
-
                                         <h3 className="regular-bazar-card__title">
                                             {bazar.title}
                                         </h3>
-
                                         <span className="regular-bazar-card__result">
                                             {bazar.result}
                                         </span>
-
                                     </div>
-
                                 </div>
 
                                 <div className="regular-bazar-card__right">
@@ -68,87 +60,61 @@ const RegularBazars = () => {
                                         className="regular-bazar-card__live-tv"
                                     />
                                 </div>
-
                             </div>
 
                             <div className="regular-bazar-card__meta">
-
                                 <div className="regular-bazar-card__meta-item">
-
                                     <span className="regular-bazar-card__meta-label">
                                         MARKET
                                     </span>
-
                                     <span className="regular-bazar-card__meta-value">
                                         {bazar.market}
                                     </span>
-
                                 </div>
-
                                 <div className="regular-bazar-card__divider"></div>
-
                                 <div className="regular-bazar-card__meta-item">
-
                                     <span className="regular-bazar-card__meta-label">
                                         LIVE TV RESULT
                                     </span>
-
                                     <span className="regular-bazar-card__meta-value">
                                         {bazar.liveResult}
                                     </span>
-
                                 </div>
-
                             </div>
 
                             <div className="regular-bazar-card__timings">
-
                                 <div className="regular-bazar-card__time-item">
-
                                     <span className="regular-bazar-card__time-label">
                                         OPEN TIME
                                     </span>
-
                                     <span className="regular-bazar-card__time-value">
                                         {bazar.openTime}
                                     </span>
-
                                 </div>
 
                                 <div className="regular-bazar-card__time-divider"></div>
-
                                 <div className="regular-bazar-card__time-item">
-
                                     <span className="regular-bazar-card__time-label">
                                         CLOSE TIME
                                     </span>
-
                                     <span className="regular-bazar-card__time-value">
                                         {bazar.closeTime}
                                     </span>
-
                                 </div>
 
                                 <div className="regular-bazar-card__time-divider"></div>
-
                                 <div className="regular-bazar-card__time-item">
-
                                     <span className="regular-bazar-card__time-label">
                                         COUNTDOWN
                                     </span>
-
                                     <span className="regular-bazar-card__countdown">
                                         {bazar.countdown}
                                     </span>
-
                                 </div>
-
                             </div>
-
                             <button className="regular-bazar-card__play-btn">
-                                PLAY
+                                Open Market
                             </button>
-
                         </div>
                     ))}
 
