@@ -24,7 +24,6 @@ const Header = () => {
                             <Wallet size={22} strokeWidth={2.3} />
                             <span>₹1000</span>
                         </div>
-
                         <ChevronDown className='balance-down-icon' />
                     </div>
                 </div>

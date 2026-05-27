@@ -168,7 +168,8 @@
         height: 70px;
 
         &__nav {
-            width: 99%;
+            width: 98%;
+            margin: auto;
         }
 
         &__nav-left {
@@ -178,8 +179,8 @@
         }
 
         &__nav-logo {
-            width: 55px;
-            height: 55px;
+            width: 45px;
+            height: 45px;
         }
 
         &__logo-img {
@@ -192,13 +193,13 @@
             display: flex;
             align-items: center;
             gap: 5px;
-            margin-right: 5px;
         }
 
         &__nav-searchgroup {
             width: 170px;
             height: 40px;
             padding: 0px 10px;
+            overflow: hidden;
         }
 
         &__navsearch-input {
@@ -213,18 +214,17 @@
 
 
         &__balance-box {
-            min-width: 70px;
+            min-width: 60px;
             height: 40px;
-            padding: 0 15px;
-
+            padding: 0 10px;
 
             svg {
                 flex-shrink: 0;
             }
 
             .balance-down-icon {
-                width: 20px;
-                height: 20px;
+                width: 18px;
+                height: 18px;
             }
         }
 
@@ -234,7 +234,7 @@
             gap: 12px;
 
             span {
-                font-size: 16px;
+                font-size: 14px;
                 font-weight: 300;
                 letter-spacing: -0.2px;
             }

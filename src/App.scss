@@ -1,0 +1,26 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+    max-height: 100vh;
+    background-image: url("../public/assets/common/background-banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-y: scroll;
+
+}
+
+@media screen and (max-width:768px) {
+    
+    body {
+            width: 100vw;
+            min-height: max-content;
+            max-height: max-content;
+            background-image: url("../public/assets/common/background-banner.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            overflow-y: scroll;
+    
+        }
+}

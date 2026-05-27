@@ -2,6 +2,7 @@ import React from 'react'
 import "./RegularBazars.scss"
 
 import tvIcon from "./images/tv.png"
+import { useNavigate } from 'react-router-dom'
 
 const bazarsData = Array.from({ length: 50 }, (_, index) => ({
     id: index + 1,
@@ -27,6 +28,11 @@ const bazarsData = Array.from({ length: 50 }, (_, index) => ({
 }))
 
 const RegularBazars = () => {
+    const navigate=useNavigate();
+
+    const openMarket=()=>{
+        navigate("/regular/regular-arena")
+    }
     return (
         <section className="regular-bz">
             <main className="regular-bz__container">
@@ -112,7 +118,7 @@ const RegularBazars = () => {
                                     </span>
                                 </div>
                             </div>
-                            <button className="regular-bazar-card__play-btn">
+                            <button className="regular-bazar-card__play-btn" onClick={openMarket}>
                                 Open Market
                             </button>
                         </div>

@@ -3,10 +3,6 @@
     min-height: 100vh;
     max-height: 100vh;
     position: relative;
-    background-image: url("./images/image.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     overflow-y: scroll;
 
     &__container {

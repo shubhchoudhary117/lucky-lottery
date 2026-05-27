@@ -1,8 +1,9 @@
 import React, { Suspense } from 'react'
 import { Navigate, useRoutes } from 'react-router-dom'
-
-import BazarsLayout from '../../features/bazars/pages/bazars-layout/BazarsLayout'
-import RegularBazars from '../../features/bazars/pages/regular-bazars/RegularBazars'
+import RegularBazars from '../../features/regular/pages/regular-bazars/RegularBazars'
+import RegularBetArena from '../../features/regular/pages/regular-bet-arena/RegularBetArena'
+import BazarsLayout from '../../features/bazars/bazars-layout/BazarsLayout'
+import RegularPlaceBet from '../../features/regular/pages/regular-place-bet/RegularPlaceBet'
 
 const PublicRoutes = () => {
 
@@ -11,19 +12,24 @@ const PublicRoutes = () => {
       path: '/',
       element: <BazarsLayout />,
       children: [
-
-        // default redirect
         {
           index: true,
           element: <Navigate to="/regular" replace />
         },
-
         {
           path: 'regular',
           element: <RegularBazars />
-        }
+        },
       ]
-    }
+    },
+     {
+          path: 'regular/regular-arena',
+          element: <RegularBetArena />
+        },
+         {
+          path: 'regular/place-bet',
+          element: <RegularPlaceBet />
+        }
   ])
 
   return (

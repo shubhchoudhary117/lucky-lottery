@@ -1,10 +1,10 @@
 import React from 'react'
 import "./BazarsLayout.scss"
 import { Search } from 'lucide-react'
-import Header from '../../../../shared/layouts/header/Header'
 
 import regularBazarIcon from "./images/bazar-icons/regular.png"
 import { Outlet } from 'react-router-dom'
+import Header from '../../../shared/layouts/header/Header'
 
 const BazarsLayout = () => {
     return <>
